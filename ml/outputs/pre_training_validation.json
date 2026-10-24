@@ -1,0 +1,198 @@
+{
+  "validation_timestamp": "2026-09-16T11:25:00Z",
+  "dataset_name": "Audio_FlowDataset (M. L. Alvarez et al., 2025)",
+  "total_recordings": 153,
+  "active_flow_recordings": 150,
+  "zero_flow_recordings": 3,
+  "zero_flow_treatment": "Documented as baseline silence reference recordings (target = 0.0 mL/s); preserved for noise floor analysis and boundary validation.",
+  "device_breakdown": {
+    "Oppo": 51,
+    "Phone": 51,
+    "Ultramic": 51
+  },
+  "flow_label_distribution": {
+    "flow_rates_covered_ml_s": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "count_per_flow_rate_per_device": 1,
+    "total_distinct_flow_levels": 51
+  },
+  "partitions": {
+    "train": {
+      "session_count": 108,
+      "device_counts": {
+        "Oppo": 36,
+        "Phone": 36,
+        "Ultramic": 36
+      },
+      "zero_flow_sessions": 3,
+      "active_flow_sessions": 105,
+      "flow_min_ml_s": 1.0,
+      "flow_max_ml_s": 50.0,
+      "flow_mean_ml_s": 25.447619047619046,
+      "flow_std_ml_s": 14.48347561048926
+    },
+    "validation": {
+      "session_count": 30,
+      "device_counts": {
+        "Oppo": 10,
+        "Phone": 10,
+        "Ultramic": 10
+      },
+      "zero_flow_sessions": 0,
+      "active_flow_sessions": 30,
+      "flow_min_ml_s": 2.0,
+      "flow_max_ml_s": 50.0,
+      "flow_mean_ml_s": 25.633333333333333,
+      "flow_std_ml_s": 14.645780583119798
+    },
+    "test": {
+      "session_count": 15,
+      "device_counts": {
+        "Oppo": 5,
+        "Phone": 5,
+        "Ultramic": 5
+      },
+      "zero_flow_sessions": 0,
+      "active_flow_sessions": 15,
+      "flow_min_ml_s": 1.0,
+      "flow_max_ml_s": 47.0,
+      "flow_mean_ml_s": 25.6,
+      "flow_std_ml_s": 13.602940858505558
+    }
+  },
+  "leakage_verification": {
+    "train_val_overlap": false,
+    "train_test_overlap": false,
+    "val_test_overlap": false,
+    "is_leakage_free": true
+  },
+  "sample_rate_and_nyquist_verification": {
+    "Oppo": {
+      "sr": 44100,
+      "nyquist": 22050.0,
+      "dom_min": 0.0,
+      "dom_max": 20844.14,
+      "sc_min": 2135.53,
+      "sc_max": 15397.76,
+      "se_min": 0.0013,
+      "se_max": 1829.4612,
+      "exceeded_nyquist": 0,
+      "frames": 130441
+    },
+    "Phone": {
+      "sr": 48000,
+      "nyquist": 24000.0,
+      "dom_min": 140.62,
+      "dom_max": 22734.38,
+      "sc_min": 2357.54,
+      "sc_max": 17659.98,
+      "se_min": 0.0552,
+      "se_max": 11544.6328,
+      "exceeded_nyquist": 0,
+      "frames": 142006
+    },
+    "Ultramic": {
+      "sr": 192000,
+      "nyquist": 96000.0,
+      "dom_min": 0.0,
+      "dom_max": 32437.5,
+      "sc_min": 2928.69,
+      "sc_max": 39448.8,
+      "se_min": 2.7694,
+      "se_max": 179827.7031,
+      "exceeded_nyquist": 0,
+      "frames": 568125
+    }
+  },
+  "temporal_frame_durations": {
+    "Oppo": {
+      "sample_rate_hz": 44100,
+      "frame_samples": 1024,
+      "frame_duration_ms": 23.22,
+      "frame_rate_fps": 43.066
+    },
+    "Phone": {
+      "sample_rate_hz": 48000,
+      "frame_samples": 1024,
+      "frame_duration_ms": 21.3333,
+      "frame_rate_fps": 46.875
+    },
+    "Ultramic": {
+      "sample_rate_hz": 192000,
+      "frame_samples": 1024,
+      "frame_duration_ms": 5.3333,
+      "frame_rate_fps": 187.5
+    }
+  },
+  "feature_configuration": {
+    "base_features": [
+      "rms",
+      "peak",
+      "dbfs",
+      "dominant_frequency",
+      "spectral_centroid",
+      "spectral_energy"
+    ],
+    "temporal_window_size_frames": 3,
+    "total_feature_dimensions": 39,
+    "metadata_excluded_from_features": true,
+    "target_excluded_from_features": true
+  },
+  "scaler_isolation": {
+    "fit_on_train_only": true,
+    "transform_only_on_val_test": true,
+    "immutable_during_transform": true
+  },
+  "READY_FOR_TRAINING": true
+}

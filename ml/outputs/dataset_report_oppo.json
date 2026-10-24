@@ -1,0 +1,53 @@
+{
+  "total_sessions": 51,
+  "valid_sessions": 51,
+  "sessions_with_flow_curves": 51,
+  "volume_only_sessions": 0,
+  "total_synchronized_samples": 130441,
+  "total_paired_frames": 130441,
+  "missing_feature_counts": 0,
+  "missing_target_counts": 0,
+  "distinct_subjects_count": 1,
+  "average_recording_duration_seconds": 59.36566078431371,
+  "feature_ranges": {
+    "rms": {
+      "min": 7.9e-05,
+      "max": 0.076162,
+      "mean": 0.006826148457923482
+    },
+    "peak": {
+      "min": 0.000244,
+      "max": 0.653442,
+      "mean": 0.034913677210386455
+    },
+    "dbfs": {
+      "min": -82.03,
+      "max": -22.37,
+      "mean": -45.719772540841774
+    },
+    "dominant_frequency": {
+      "min": 0.0,
+      "max": 20844.14,
+      "mean": 7888.435325242692
+    },
+    "spectral_centroid": {
+      "min": 2135.53,
+      "max": 15397.76,
+      "mean": 10004.865225197696
+    },
+    "spectral_energy": {
+      "min": 0.0013,
+      "max": 1829.4612,
+      "mean": 12.529647442905297
+    }
+  },
+  "target_flow_range": {
+    "min": 0.0,
+    "max": 50.0,
+    "mean": 25.2476215300404,
+    "count": 130441
+  },
+  "supervised_training_ready": true,
+  "audit_note": "Ready for supervised training.",
+  "device_filter": "Oppo"
+}

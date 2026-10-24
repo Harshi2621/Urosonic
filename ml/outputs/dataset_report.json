@@ -1,0 +1,52 @@
+{
+  "total_sessions": 153,
+  "valid_sessions": 153,
+  "sessions_with_flow_curves": 153,
+  "volume_only_sessions": 0,
+  "total_synchronized_samples": 840572,
+  "total_paired_frames": 840572,
+  "missing_feature_counts": 0,
+  "missing_target_counts": 0,
+  "distinct_subjects_count": 0,
+  "average_recording_duration_seconds": 59.38399803921575,
+  "feature_ranges": {
+    "rms": {
+      "min": 7.9e-05,
+      "max": 0.93401,
+      "mean": 0.2544323419683376
+    },
+    "peak": {
+      "min": 0.000244,
+      "max": 1.0,
+      "mean": 0.5751162401717216
+    },
+    "dbfs": {
+      "min": -82.03,
+      "max": -0.59,
+      "mean": -19.710570206954255
+    },
+    "dominant_frequency": {
+      "min": 0.0,
+      "max": 32437.5,
+      "mean": 4265.468490322076
+    },
+    "spectral_centroid": {
+      "min": 2135.53,
+      "max": 39448.8,
+      "mean": 10768.160073497582
+    },
+    "spectral_energy": {
+      "min": 0.0013,
+      "max": 179827.7031,
+      "mean": 23301.53253640798
+    }
+  },
+  "target_flow_range": {
+    "min": 0.0,
+    "max": 50.0,
+    "mean": 25.247539770537205,
+    "count": 840572
+  },
+  "supervised_training_ready": true,
+  "audit_note": "Ready for supervised training."
+}

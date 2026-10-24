@@ -1,0 +1,53 @@
+{
+  "total_sessions": 51,
+  "valid_sessions": 51,
+  "sessions_with_flow_curves": 51,
+  "volume_only_sessions": 0,
+  "total_synchronized_samples": 142006,
+  "total_paired_frames": 142006,
+  "missing_feature_counts": 0,
+  "missing_target_counts": 0,
+  "distinct_subjects_count": 1,
+  "average_recording_duration_seconds": 59.379868627450946,
+  "feature_ranges": {
+    "rms": {
+      "min": 0.000544,
+      "max": 0.222159,
+      "mean": 0.04479170525893241
+    },
+    "peak": {
+      "min": 0.001617,
+      "max": 1.0,
+      "mean": 0.2125829223765227
+    },
+    "dbfs": {
+      "min": -65.29,
+      "max": -13.07,
+      "mean": -29.276675774262966
+    },
+    "dominant_frequency": {
+      "min": 140.62,
+      "max": 22734.38,
+      "mean": 3022.433823853204
+    },
+    "spectral_centroid": {
+      "min": 2357.54,
+      "max": 17659.98,
+      "mean": 9382.95261277698
+    },
+    "spectral_energy": {
+      "min": 0.0552,
+      "max": 11544.6328,
+      "mean": 505.20469297917
+    }
+  },
+  "target_flow_range": {
+    "min": 0.0,
+    "max": 50.0,
+    "mean": 25.247524752475247,
+    "count": 142006
+  },
+  "supervised_training_ready": true,
+  "audit_note": "Ready for supervised training.",
+  "device_filter": "Phone"
+}

@@ -1,24 +1,24 @@
-//
-//  ContentView.swift
-//  Urosonic
-//
-//  Created by SAIL on 27/04/26.
-//
+// ContentView.swift — Root Router: reads AppRouter and presents the right screen
 
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var router:    AppRouter
+    @EnvironmentObject var authState: AuthState
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Group {
+            switch router.screen {
+            case .splash:        SplashView()
+            case .login:         LoginView()
+            case .register:      RegisterView()
+            case .forgotPassword:ForgotPasswordView()
+            case .patient:       PatientMainView()
+            case .doctor:        DoctorMainView()
+            }
         }
-        .padding()
+        .animation(.easeInOut(duration: 0.25), value: router.screen)
     }
 }
 
-#Preview {
-    ContentView()
-}
+#Preview { ContentView() }
